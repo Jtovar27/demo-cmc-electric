@@ -70,7 +70,7 @@ export default async function BlogPostPage({
         )}
 
         <div className="prose prose-invert prose-yellow max-w-none font-sans text-[#A0A0A0] leading-relaxed">
-          {content.split("\n\n").map((paragraph, i) => (
+          {content.split("\n\n").map((paragraph: string, i: number) => (
             <p key={i} className="mb-4">{paragraph}</p>
           ))}
         </div>
